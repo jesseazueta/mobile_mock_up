@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jesse Mobile Mock Up</title>
+
+    <link rel="stylesheet" type= "text/css" href="stylesheets/style.css">
+    <script src="https://use.fontawesome.com/24e1925672.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="item1">
+        <div class="header">
+          <img class= "profilepic" src= "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/1904269_10153176844112274_2883417357028420226_n.jpg?oh=24622390411b948665d87e1d779b194f&oe=5825F986" height = "175px" width = "175px" />
+          <i class="fa fa-star" aria-hidden="true" style="font-size:60px;"></i>
+          <i class="fa fa-ellipsis-v" aria-hidden="true" style="font-size:60px;"></i>
+
+        </div>
+        <h1 id = "name"><%= @contact.first_name+ " " +@contact.last_name%></h1>
+        <p id = "company">Pied Piper</p>
+        <div class="mobile">
+          <i class="fa fa-mobile" aria-hidden="true" style="font-size:65px;"></i>
+          <ul class ="info">
+            <li class = "light">MOBILE</li>
+            <li class = "dark"><%= @contact.mobile %></li>
+          </ul>
+        </div>
+
+        <div class="work">
+          <i class="fa fa-phone" aria-hidden="true" style="font-size:50px;"></i>
+          <ul class="info">
+            <li class = "light">WORK</li>
+            <li class = "dark"><%= @contact.work %></li>
+          </ul>
+        </div>
+
+        <div class="work2">
+          <i class="fa fa-envelope" aria-hidden="true" style="font-size:45px;"></i>
+          <ul class="info">
+            <li class = "light">WORK</li>
+            <li class = "dark"><%= @contact.email %></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="item2">
+        <i class="fa fa-facebook-official" aria-hidden="true" style="font-size:50px;"></i>
+        <p>Looking forward to the </br>
+        Mediterranean cruise today!
+        </p>
+        <i class="fa fa-map-pin" aria-hidden="true" style="font-size:40px;"></i>
+        <p> <span>Santorini &#0149; 2hr</span></p>
+
+      </div>
+
+      <div class="item3">
+        <i class="fa fa-instagram" aria-hidden="true" style="font-size:50px;"></i>
+        <p>Beautiful Sunset</br>
+         <span>14 hr</span></p>
+         <img src= "http://images.all-free-download.com/images/graphicthumb/sea_ocean_sunset_267991.jpg" height = "400px" width = "600px"/>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>

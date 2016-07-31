@@ -1,0 +1,194 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  justify-content: space-around;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: space-around;
+  background-color: #eff3f4;
+}
+
+.container {
+  height: 105em;
+  margin:2em 2.6em;
+  width: 55em;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  height: 20em;
+  /*background-color: red;*/
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/78/Mendelson_and_Son_Company_Building_NE_Corner.jpg");
+  background-size: 150%;
+  background-position: top ;
+  border-radius: 30px 30px 0 0;
+}
+.header i {
+  margin-top: .5em;
+}
+.fa-star:before {
+  color:white;
+  margin-left: 2.5em;
+}
+.fa-ellipsis-v:before {
+    color:white;
+    /*float:right;*/
+    padding-left: 2em;
+    margin-right: .5em;
+    /*margin: -top: 3em;*/
+}
+.profilepic {
+  margin-left: 20em;
+  margin-top: 12em;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+#name {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+#company {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: Helvetica;
+  color: #a6b6c2;
+}
+
+.info {
+  margin-top: .5em;
+  list-style:none;
+  font-family: Helvetica;
+}
+
+.light {
+    color: #a6b6c2;
+    /*margin-top: .5em;*/
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+.dark {
+    color: #6d6c6c;
+    font-size: 2.6em;
+}
+
+.item1 {
+  background-color: white;
+  /*height: 65em;*/
+  margin-top: 10em;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+-moz-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+
+}
+.mobile {
+  display: flex;
+  height: 9em;
+}
+.mobile i {
+  color: gray;
+  margin-top: .4em;
+  padding-left: .9em;
+  padding-right: .5em;
+}
+
+.work i {
+  color: gray;
+  margin-top: .7em;
+  padding-left: 1em;
+  padding-right: .5em;
+}
+.work2 i {
+  color: gray;
+  margin-top: .7em;
+  padding-left: 1em;
+  padding-right: .5em;
+}
+.work {
+  display: flex;
+  height: 9em;
+}
+.work2 {
+  display: flex;
+  height: 9em;
+}
+.item2 {
+  background-color: white;
+  /*height: 15em;*/
+  margin-top: 1em;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+  box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+}
+
+.item2 p{
+  color: #6d6c6c;
+  font-size: 2.6em;
+  font-family: Helvetica;
+  margin-top: 1em;
+
+}
+.item2 i {
+  float:left;
+  margin: 1em 1em;
+}
+.fa-facebook-official:before{
+  color: #3A5993;
+}
+.fa-map-pin:before {
+  color: #9d9d9d;
+  margin: -1em 0 0 -1em;
+  /*margin-top: -3em;*/
+}
+.item2 p span{
+  /*margin-top:1em;*/
+  font-size: .8em;
+  margin-left: -1em;
+}
+.item3 {
+  background-color: white;
+  margin-top: 1em;
+  /*height: 22em;*/
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+-moz-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+}
+.item3 p{
+  color: #6d6c6c;
+  font-size: 2.6em;
+  font-family: Helvetica;
+  margin-bottom: -.8em;
+  margin-top: 1em;
+}
+.item3 i {
+  float:left;
+  margin: 1em 1em;
+}
+.item3 img {
+margin-top: 3em;
+padding-bottom: 1em;
+}
+.fa-facebook-official:before{
+  color: #3A5993;
+}
+
+.item3 span {
+  font-size: .8em;
+}
+
+.fa-instagram:before {
+  color: #3c7398;
+}

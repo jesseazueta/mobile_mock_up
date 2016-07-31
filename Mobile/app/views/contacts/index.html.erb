@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="stylesheets/contacts.css" type="text/css">
+    <script src="https://use.fontawesome.com/24e1925672.js"></script>
+  </head>
+  <body>
+    <div id="contact_head">
+      <ul class ="head_icons">
+        <li><i class="fa fa-google-plus-square" aria-hidden="true"></i>
+</li>
+        <li><i class="fa fa-bell" aria-hidden="true"></i></li>
+        <li><span>10:09</span></li>
+        <li><i class="fa fa-wifi" aria-hidden="true"></i></li>
+        <li><i class="fa fa-signal" aria-hidden="true"></i></li>
+        <li><i class="fa fa-battery-full" aria-hidden="true"></i></li>
+      </ul>
+
+      <ul class ="head_icons">
+        <li><span id= "all_cont">All</span></li>
+        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+        <li><i class="fa fa-plus" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+    <div class="contacts">
+      <% @contacts.each do |contact| %>
+      <div class="A">
+        <h1>A</h1>
+        <ul>
+          <li>
+            <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/10400016_10153425632463210_7259980540156215815_n.jpg?oh=62375711d913148a90260a9d601d28f1&oe=582B1F49" height = "130px" width = "130px"/>
+          </li>
+          <li>
+            <div class="cont_name">
+              <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+              <h2>Stanford University</h2>
+            </div>
+          </li>
+        </br>
+          <li>
+            <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/1425681_10202570511288889_1633479500_n.jpg?oh=fed9e848718902ea69509b3c3059d46d&oe=5813CA2B" height = "130px" width = "130px"/>
+          </li>
+          <li>
+            <div class="cont_name">
+              <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+              <h2>Hooli Inc.</h2>
+            </div>
+          </li>
+          </br>
+        </ul>
+        </div>
+
+
+      <div class="B">
+      <h1>B</h1>
+      <ul>
+        <li>
+          <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/12299226_10102201130987757_8587452999605962480_n.jpg?oh=eebd4351a8238b9426141349b082c2b0&oe=58320CC7" height = "130px" width = "130px"/>
+        </li>
+        <li>
+          <div class="cont_name">
+            <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+            <h2>UC Berkeley</h2>
+          </div>
+        </li>
+      </ul>
+        </br>
+        <li>
+          <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/13466535_10154303788499628_742948699389429250_n.jpg?oh=bc8769412295bed7d2300048f3b9396c&oe=5814D5EE" height = "130px" width = "130px"/>
+        </li>
+        <li>
+          <div class="cont_name">
+            <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+            <h2>Husky Energy</h2>
+          </div>
+        </li>
+      </ul>
+      </div>
+
+      <div class="C">
+      <h1>C</h1>
+      <ul>
+        <li>
+          <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/11998802_10152998192761237_2439478790289855605_n.jpg?oh=ea441bd9ed30ab9ee2ddbbb365ece82b&oe=582E9294" height = "130px" width = "130px"/>
+        </li>
+        <li>
+          <div class="cont_name">
+            <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+            <h2>Hooli Inc.</h2>
+          </div>
+        </li>
+      </ul>
+
+      </div>
+
+      <div class="D">
+      <h1>D</h1>
+      <ul>
+        <li>
+          <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/1904269_10153176844112274_2883417357028420226_n.jpg?oh=24622390411b948665d87e1d779b194f&oe=5825F986" height = "130px" width = "130px"/>
+        </li>
+        <li>
+          <div class="cont_name">
+            <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+            <h2>Pied Piper</h2>
+          </div>
+        </li>
+        </br>
+        <li>
+          <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/1915278_10153290689778862_5057223662051632645_n.jpg?oh=0e406772b4c679188c59ebe8fc7405bd&oe=58230542" height = "130px" width = "130px"/>
+        </li>
+        <li>
+          <div class="cont_name">
+            <h1><%= contact.first_name+ " " + contact.last_name %></h1>
+            <h2>Hooli Inc.</h2>
+          </div>
+        </li>
+      </ul>
+      </div>
+      <% end %>
+      <div class="empty">
+
+      </div>
+  </div>
+
+
+    <div id="alphabet">
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>U</li>
+        <li>V</li>
+        <li>W</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+        <li>#</li>
+      </ul>
+
+    </div>
+    <div id="contact_foot">
+      <ul class="foot_icons">
+        <li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+      </ul>
+      <ul class="foot_icons_names">
+        <li>Recents</li>
+        <li>Contacts</li>
+        <li>Favorites</li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
