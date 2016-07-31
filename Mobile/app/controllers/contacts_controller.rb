@@ -1,7 +1,13 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   def index
-    @contacts = Contact.order(:id)
+
+    @contacts = Contact.order(:last_name).all
+    # @contacts = ("A".."Z").map { |last_name|
+    # Contact.where("field LIKE :last_name", last_name: "#{last_name}%")}
+    # @contacts = Contact.order(:last_name)
+    @list = @contacts.group_by{ |contact| contact.last_name[0] }
+    #
     @contact= Contact.new
 
   end
